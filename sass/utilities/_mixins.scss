@@ -1,0 +1,28 @@
+@mixin flex ($direction, $justify, $align,){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin self{
+    justify-self: center;
+    align-self: center;
+}
+@mixin content{
+    justify-content: center;
+    align-content: center;
+}
+@mixin trayec{
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+@mixin argentina{
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.274);
+}

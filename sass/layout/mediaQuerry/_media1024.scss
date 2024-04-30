@@ -1,0 +1,180 @@
+@media (min-width:1024px) and (max-width:1201px) {
+    header{
+        padding: 15px;
+        height: 60px;
+        a{
+            font-size: map-get($letras, 6);
+            padding: 0px 10px;
+            &:hover{
+                transform: none;
+            }
+        }
+        ul{
+            li{
+                a{
+                    font-size: map-get($letras, 4);
+                    padding: 5px;
+                    &:hover{
+                        transform: none;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+    padding: 15px;
+    height: 60px;
+    a{
+        font-size: map-get($letras, 6);
+        padding: 0px 10px;
+        &:hover{
+            transform: none;
+        }
+    }
+    ul{
+        li{
+            a{
+                font-size: map-get($letras, 4);
+                padding: 5px;
+                &:hover{
+                    transform: none;
+                }
+            }
+        }
+    }
+}
+/*MAIN DE BIOGRAFIA*/
+.biografia{
+    h1{
+    &::after{
+    width: 230px;
+    right: 50px;
+        }
+    &::before{
+    width: 220px;
+    left: 80px;
+    }
+    }
+    p{
+        width: 400px;
+        height: 600px;
+        padding: 15px;
+        border: none;
+        font-size: map-get($letras, 3);
+    }
+    img{
+        width: 400px;
+        height: 600px;
+        border: none;
+    }
+}
+/*MAIN DE TRAYECTORIA*/
+.trayectoria{
+    h1{
+        font-size: map-get($letras, 5);
+    }
+    div:nth-child(2){ /*texto 1*/
+        width: 440px;
+        height: 360px;
+        font-size: map-get($letras, 5);
+    }
+    div:nth-child(3) img{ /*img 1*/
+        width: 440px;
+        height: 360px;
+    }
+    div:nth-child(4){ /*texto 2*/
+        width: 440px;
+        height: 360px;
+        font-size: map-get($letras, 5);
+    }
+    div:nth-child(5) img{ /*img 2*/
+        width: 440px;
+        height: 360px;
+    }
+    div:nth-child(6){ /*texto 3*/
+        width: 440px;
+        height: 360px;
+        font-size: map-get($letras, 5);
+    }
+    div:nth-child(7) img{ /*img 3*/
+        width: 440px;
+        height: 360px;
+    }
+    div:nth-child(8){ /*texto 4*/
+        width: 440px;
+        height: 360px;
+        font-size: map-get($letras, 5);
+    }
+    div:nth-child(9) img{ /*img 4*/
+        width: 340px;
+        height: 360px;
+    }
+    div:nth-child(10){ /*texto 5*/
+        width: 440px;
+        height: 360px;
+        font-size: map-get($letras, 5);
+    }
+    div:nth-child(11) img{ /*img 5*/
+        width: 440px;
+        height: 360px;
+    }
+    div:nth-child(12){ /*texto 6*/
+        width: 440px;
+        height: 460px;
+        font-size: map-get($letras, 5);
+    }
+    div:nth-child(13) img{ /*img 6*/
+        width: 440px;
+        height: 460px;
+    }
+    div:nth-child(14){ /*texto 7*/
+        width: 440px;
+        height: 320px;
+        font-size: map-get($letras, 5);
+    }
+    div:nth-child(15) img{ /*img 7*/
+        width: 440px;
+        height: 320px;
+    }
+}
+/*Main de seleccion*/
+.argentina{
+    grid-template-rows: 70px repeat(3, 25rem);
+    gap: .625rem;
+    padding: .9375rem;
+    h1{
+        font-size: map-get($letras, 6);
+    }
+    div:nth-child(2){ /*parrafo 1*/
+        width: 490px;
+        height: 380px;
+        font-size: map-get($letras, 3);
+        padding: 50px;
+    }
+    div:nth-child(3) img{ /*imagen 1*/
+        width: 490px;
+        height: 380px;
+    }
+    div:nth-child(4){ /*parrafo 2*/
+        width: 490px;
+        height: 380px;
+        font-size: map-get($letras, 3);
+    }
+    div:nth-child(5) img{ /*imagen 2*/
+        width: 490px;
+        height: 380px;
+    }
+    div:nth-child(6){ /*parrafo 3*/
+        width: 490px;
+        height: 380px;
+        font-size: map-get($letras, 3);
+        padding: 50px
+    }
+    div:nth-child(7) img{ /*imagen 3*/
+        width: 490px;
+        height: 380px;
+    }
+}
+/*MAIN DE CONTACTO*/
+/*no se modifica nada en 1024px*/
+}

@@ -1,0 +1,1254 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900; 1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*llamado a las utilities*/
+/*llamado a los archivos base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+* {
+  font-family: "Madimi One", sans-serif;
+  font-style: normal; }
+
+/*llamado a los layout*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b7c9f2;
+  padding: 20px;
+  height: 70px;
+  border: 1px solid black; }
+  header a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding: 0px 20px;
+    align-self: center; }
+    header a:hover {
+      transform: scale(1.2); }
+  header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px; }
+    header ul li {
+      text-decoration: none; }
+      header ul li a {
+        color: black;
+        font-size: 22px; }
+      header ul li:hover {
+        transform: scale(1.3); }
+
+#menu-toggle, .menu-label {
+  font-size: 22px;
+  cursor: pointer;
+  display: none; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b7c9f2;
+  padding: 20px;
+  height: 70px;
+  border: 1px solid black; }
+  footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding: 0px 20px;
+    align-self: center; }
+    footer a:hover {
+      transform: scale(1.2); }
+  footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px; }
+    footer ul li {
+      text-decoration: none; }
+      footer ul li a {
+        color: black;
+        font-size: 22px; }
+      footer ul li:hover {
+        transform: scale(1.3); }
+
+.container-fluid {
+  position: relative;
+  height: 100vh; }
+  .container-fluid::after {
+    content: " ";
+    background-image: url(../assets/fondos/Captura.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    opacity: .5;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+
+.mainIndex section div h1 {
+  font-size: 50px; }
+
+.mainIndex section div h2 {
+  font-size: 40px; }
+
+.biografia {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 70px 90%;
+  padding: 20px;
+  gap: .625rem;
+  position: relative; }
+  .biografia::after {
+    /*imagen de fondo*/
+    content: " ";
+    background-image: url(../assets/fondos/fondocontacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    opacity: .4;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+  .biografia h1 {
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    padding: 20px; }
+    .biografia h1::after {
+      content: " ";
+      position: absolute;
+      width: 350px;
+      height: 2px;
+      background-color: black;
+      border-radius: 20px;
+      right: 80px;
+      top: 55px; }
+    .biografia h1::before {
+      content: " ";
+      position: absolute;
+      width: 350px;
+      height: 2px;
+      background-color: black;
+      top: 55px;
+      border-radius: 20px;
+      left: 100px; }
+  .biografia div {
+    justify-self: center;
+    align-self: center; }
+  .biografia p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 40px;
+    width: 500px;
+    height: 700px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: justify;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.274); }
+  .biografia img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+    border: 2px solid black; }
+
+.trayectoria {
+  /* background: radial-gradient(#b7c9f2,#5c89f1); */
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 70px repeat(3, 390px) 450px 410px 500px 360px;
+  grid-template-areas: "titulo titulo"
+ "div1 div2"
+ "div3 div4"
+ "div5 div6"
+ "div7 div8"
+ "div9 div10"
+ "div11 div12"
+ "div13 div14";
+  row-gap: 2.25rem;
+  padding: 1.25rem;
+  gap: 1.25rem;
+  position: relative; }
+  .trayectoria::after {
+    /*imagen de fondo*/
+    content: " ";
+    background-image: url(../assets/fondos/manu-fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+  .trayectoria h1 {
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.274);
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    grid-area: titulo;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px; }
+  .trayectoria div {
+    justify-self: center;
+    align-self: center; }
+
+.trayectoria div:nth-child(2) {
+  /*texto 1*/
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: rgba(0, 0, 0, 0.274);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  grid-area: div2;
+  width: 540px;
+  height: 360px;
+  padding: 60px;
+  border: 2px solid black; }
+
+.trayectoria div:nth-child(3) img {
+  /*img 1*/
+  grid-column: 1/2;
+  grid-row: 2/3;
+  grid-area: div1;
+  width: 540px;
+  height: 360px;
+  border: 2px solid black;
+  border-radius: 20px; }
+
+.trayectoria div:nth-child(4) {
+  /*texto 2*/
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: rgba(0, 0, 0, 0.274);
+  grid-column: 1/2;
+  grid-row: 3/4;
+  grid-area: div3;
+  width: 540px;
+  height: 360px;
+  border: 2px solid black;
+  padding: 50px; }
+
+.trayectoria div:nth-child(5) img {
+  /*img 2*/
+  grid-column: 2/3;
+  grid-row: 3/4;
+  grid-area: div4;
+  width: 540px;
+  height: 360px;
+  border: 2px solid black;
+  border-radius: 20px; }
+
+.trayectoria div:nth-child(6) {
+  /*texto 3*/
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: rgba(0, 0, 0, 0.274);
+  grid-column: 2/3;
+  grid-row: 4/5;
+  grid-area: div6;
+  width: 540px;
+  height: 360px;
+  border: 2px solid black;
+  padding: 70px 50px; }
+
+.trayectoria div:nth-child(7) img {
+  /*img 3*/
+  grid-column: 1/2;
+  grid-row: 4/5;
+  grid-area: div5;
+  width: 540px;
+  height: 360px;
+  border: 2px solid black;
+  border-radius: 20px; }
+
+.trayectoria div:nth-child(8) {
+  /*texto 4*/
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: rgba(0, 0, 0, 0.274);
+  grid-column: 1/2;
+  grid-row: 5/6;
+  grid-area: div7;
+  width: 540px;
+  height: 420px;
+  border: 2px solid black;
+  padding: 50px; }
+
+.trayectoria div:nth-child(9) img {
+  /*img 4*/
+  grid-column: 2/3;
+  grid-row: 5/6;
+  grid-area: div8;
+  width: 400px;
+  height: 420px;
+  border: 2px solid black;
+  border-radius: 20px; }
+
+.trayectoria div:nth-child(10) {
+  /*texto 5*/
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: rgba(0, 0, 0, 0.274);
+  grid-column: 2/3;
+  grid-row: 6/7;
+  grid-area: div10;
+  width: 540px;
+  height: 360px;
+  border: 2px solid black;
+  padding: 40px; }
+
+.trayectoria div:nth-child(11) img {
+  /*img 5*/
+  grid-column: 1/2;
+  grid-row: 6/7;
+  grid-area: div9;
+  width: 540px;
+  height: 360px;
+  border: 2px solid black;
+  border-radius: 20px; }
+
+.trayectoria div:nth-child(12) {
+  /*texto 6*/
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: rgba(0, 0, 0, 0.274);
+  grid-column: 1/2;
+  grid-row: 7/8;
+  grid-area: div11;
+  width: 540px;
+  height: 450px;
+  padding: 40px;
+  border: 2px solid black; }
+
+.trayectoria div:nth-child(13) img {
+  /*img 6*/
+  grid-column: 2/3;
+  grid-row: 7/8;
+  grid-area: div12;
+  width: 440px;
+  height: 450px;
+  border: 2px solid black;
+  border-radius: 20px; }
+
+.trayectoria div:nth-child(14) {
+  /*texto 7*/
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: rgba(0, 0, 0, 0.274);
+  grid-column: 2/3;
+  grid-row: 8/9;
+  grid-area: div14;
+  width: 540px;
+  height: 360px;
+  padding: 50px;
+  border: 2px solid black; }
+
+.trayectoria div:nth-child(15) img {
+  /*img 7*/
+  grid-column: 1/2;
+  grid-row: 8/9;
+  grid-area: div13;
+  width: 500px;
+  height: 360px;
+  border: 2px solid black;
+  border-radius: 20px; }
+
+.argentina {
+  /* background: radial-gradient(#08080888,#5c89f1); */
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 70px repeat(3, 28.125rem);
+  grid-template-areas: "titulo titulo"
+ "img1 texto1"
+ "texto2 img2"
+ "img3 texto3";
+  row-gap: 2.25rem;
+  padding: 1.25rem;
+  position: relative; }
+  .argentina::after {
+    /*imagen de fondo*/
+    content: " ";
+    background-image: url(../assets/fondos/fondocontacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    opacity: .4;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+  .argentina h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    grid-area: titulo;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.274);
+    border-radius: 0px 20px 0px 20px; }
+  .argentina div {
+    justify-self: center;
+    align-self: center; }
+
+.argentina div:nth-child(2) {
+  /*parrafo 1*/
+  grid-column: 2/3;
+  grid-row: 2/3;
+  grid-area: texto1;
+  width: 540px;
+  height: 450px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.274);
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.274);
+  border-radius: 60px 0px 60px 0px; }
+
+.argentina div:nth-child(3) img {
+  /*imagen 1*/
+  grid-column: 1/2;
+  grid-row: 2/3;
+  grid-area: img1;
+  justify-self: center;
+  align-self: center;
+  width: 540px;
+  height: 450px;
+  border-radius: 0px 60px 0px 60px; }
+
+.argentina div:nth-child(4) {
+  /*parrafo 2*/
+  grid-column: 1/2;
+  grid-row: 3/4;
+  grid-area: texto2;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.274);
+  justify-content: center;
+  align-content: center;
+  width: 540px;
+  height: 450px;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.274);
+  border-radius: 60px 0px 60px 0px; }
+
+.argentina div:nth-child(5) img {
+  /*imagen 2*/
+  grid-column: 2/3;
+  grid-row: 3/4;
+  grid-area: img2;
+  justify-self: center;
+  align-self: center;
+  width: 540px;
+  height: 450px;
+  border-radius: 0px 60px 0px 60px; }
+
+.argentina div:nth-child(6) {
+  /*parrafo 3*/
+  grid-column: 2/3;
+  grid-row: 4/5;
+  grid-area: texto3;
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.274);
+  width: 540px;
+  height: 450px;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.274);
+  border-radius: 60px 0px 60px 0px; }
+
+.argentina div:nth-child(7) img {
+  /*imagen 3*/
+  grid-column: 1/2;
+  grid-row: 4/5;
+  grid-area: img3;
+  justify-content: center;
+  align-content: center;
+  width: 540px;
+  height: 450px;
+  border-radius: 0px 60px 0px 60px; }
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "h1 form" "contacto form" ". form";
+  row-gap: 2.25rem;
+  padding: 20px;
+  gap: 1.25rem;
+  position: relative;
+  height: 100vh; }
+  .contacto::after {
+    /*imagen de fondo*/
+    content: " ";
+    background-image: url(../assets/fondos/manu-fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+  .contacto h1 {
+    grid-area: h1;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 40px;
+    font-weight: bold;
+    justify-self: center;
+    align-self: flex-end; }
+  .contacto p {
+    grid-area: parrafo;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    font-size: 26px;
+    text-align: center; }
+  .contacto input {
+    background-color: #b7c9f2;
+    border-radius: 10px;
+    border: 2px solid black; }
+    .contacto input::placeholder {
+      color: black;
+      text-align: center; }
+  .contacto label {
+    font-size: 22px; }
+  .contacto .form {
+    grid-area: form;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    justify-self: center;
+    align-self: center; }
+  .contacto .form div:nth-child(2) input {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 400px;
+    height: 40px; }
+  .contacto .form div:nth-child(3) input {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 400px;
+    height: 40px; }
+  .contacto .form div:nth-child(4) input {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 140px;
+    font-size: 16px; }
+    .contacto .form div:nth-child(4) input::placeholder {
+      text-align: center; }
+  .contacto .form div:nth-child(5) button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    color: black;
+    background-color: #b7c9f2;
+    border-radius: 20px;
+    border: 2px solid black; }
+    .contacto .form div:nth-child(5) button:active {
+      background-color: rgba(0, 0, 0, 0.521);
+      color: white; }
+  .contacto .form div {
+    padding: 20px; }
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  header {
+    padding: 15px;
+    height: 60px; }
+    header a {
+      font-size: 26px;
+      padding: 0px 10px; }
+      header a:hover {
+        transform: none; }
+    header ul li a {
+      font-size: 22px;
+      padding: 5px; }
+      header ul li a:hover {
+        transform: none; }
+  footer {
+    padding: 15px;
+    height: 60px; }
+    footer a {
+      font-size: 26px;
+      padding: 0px 10px; }
+      footer a:hover {
+        transform: none; }
+    footer ul li a {
+      font-size: 22px;
+      padding: 5px; }
+      footer ul li a:hover {
+        transform: none; }
+  /*MAIN DE BIOGRAFIA*/
+  .biografia h1::after {
+    width: 230px;
+    right: 50px; }
+  .biografia h1::before {
+    width: 220px;
+    left: 80px; }
+  .biografia p {
+    width: 400px;
+    height: 600px;
+    padding: 15px;
+    border: none;
+    font-size: 20px; }
+  .biografia img {
+    width: 400px;
+    height: 600px;
+    border: none; }
+  /*MAIN DE TRAYECTORIA*/
+  .trayectoria h1 {
+    font-size: 24px; }
+  .trayectoria div:nth-child(2) {
+    /*texto 1*/
+    width: 440px;
+    height: 360px;
+    font-size: 24px; }
+  .trayectoria div:nth-child(3) img {
+    /*img 1*/
+    width: 440px;
+    height: 360px; }
+  .trayectoria div:nth-child(4) {
+    /*texto 2*/
+    width: 440px;
+    height: 360px;
+    font-size: 24px; }
+  .trayectoria div:nth-child(5) img {
+    /*img 2*/
+    width: 440px;
+    height: 360px; }
+  .trayectoria div:nth-child(6) {
+    /*texto 3*/
+    width: 440px;
+    height: 360px;
+    font-size: 24px; }
+  .trayectoria div:nth-child(7) img {
+    /*img 3*/
+    width: 440px;
+    height: 360px; }
+  .trayectoria div:nth-child(8) {
+    /*texto 4*/
+    width: 440px;
+    height: 360px;
+    font-size: 24px; }
+  .trayectoria div:nth-child(9) img {
+    /*img 4*/
+    width: 340px;
+    height: 360px; }
+  .trayectoria div:nth-child(10) {
+    /*texto 5*/
+    width: 440px;
+    height: 360px;
+    font-size: 24px; }
+  .trayectoria div:nth-child(11) img {
+    /*img 5*/
+    width: 440px;
+    height: 360px; }
+  .trayectoria div:nth-child(12) {
+    /*texto 6*/
+    width: 440px;
+    height: 460px;
+    font-size: 24px; }
+  .trayectoria div:nth-child(13) img {
+    /*img 6*/
+    width: 440px;
+    height: 460px; }
+  .trayectoria div:nth-child(14) {
+    /*texto 7*/
+    width: 440px;
+    height: 320px;
+    font-size: 24px; }
+  .trayectoria div:nth-child(15) img {
+    /*img 7*/
+    width: 440px;
+<<<<<<< HEAD
+    height: 320px;
+  }
+}
+=======
+    height: 320px; }
+  /*Main de seleccion*/
+  .argentina {
+    grid-template-rows: 70px repeat(3, 25rem);
+    gap: .625rem;
+    padding: .9375rem; }
+    .argentina h1 {
+      font-size: 26px; }
+    .argentina div:nth-child(2) {
+      /*parrafo 1*/
+      width: 490px;
+      height: 380px;
+      font-size: 20px;
+      padding: 50px; }
+    .argentina div:nth-child(3) img {
+      /*imagen 1*/
+      width: 490px;
+      height: 380px; }
+    .argentina div:nth-child(4) {
+      /*parrafo 2*/
+      width: 490px;
+      height: 380px;
+      font-size: 20px; }
+    .argentina div:nth-child(5) img {
+      /*imagen 2*/
+      width: 490px;
+      height: 380px; }
+    .argentina div:nth-child(6) {
+      /*parrafo 3*/
+      width: 490px;
+      height: 380px;
+      font-size: 20px;
+      padding: 50px; }
+    .argentina div:nth-child(7) img {
+      /*imagen 3*/
+      width: 490px;
+      height: 380px; }
+  /*MAIN DE CONTACTO*/
+  /*no se modifica nada en 1024px*/ }
+
+>>>>>>> trabajo
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 15px; }
+    header a {
+      font-size: 22px;
+      padding: 1px; }
+      header a:hover {
+        transform: none; }
+    header ul li a {
+      font-size: 18px;
+      padding: 2px; }
+      header ul li a:hover {
+        transform: none; }
+  footer {
+    padding: 15px; }
+    footer a {
+      font-size: 22px;
+      padding: 1px; }
+      footer a:hover {
+        transform: none; }
+    footer ul li a {
+      font-size: 18px;
+      padding: 2px; }
+      footer ul li a:hover {
+        transform: none; }
+  /*MAIN DE BIOGRAFIA*/
+  .biografia {
+    gap: .3125rem;
+    grid-template-rows: 70px 600px;
+    padding: 1px; }
+    .biografia h1 {
+      padding: 5px;
+      font-size: 24px; }
+      .biografia h1::after {
+        display: none; }
+      .biografia h1::before {
+        display: none; }
+    .biografia p {
+      width: 350px;
+      height: 550px;
+      padding: 10px;
+      border: none;
+      font-size: 18px; }
+    .biografia img {
+      padding: 0px;
+      width: 350px;
+      height: 550px;
+      border: none; }
+  /*MAIN DE TRAYECTORIA*/
+  .trayectoria {
+    padding: 10px;
+    grid-template-rows: 60px repeat(5, 320px) 380px 300px; }
+    .trayectoria h1 {
+      font-size: 24px; }
+    .trayectoria div:nth-child(2) {
+      /*texto 1*/
+      width: 350px;
+      height: 300px;
+      font-size: 20px;
+      padding: 40px; }
+    .trayectoria div:nth-child(3) img {
+      /*img 1*/
+      width: 350px;
+      height: 300px; }
+    .trayectoria div:nth-child(4) {
+      /*texto 2*/
+      width: 350px;
+      height: 300px;
+      font-size: 20px;
+      padding: 40px; }
+    .trayectoria div:nth-child(5) img {
+      /*img 2*/
+      width: 350px;
+      height: 300px; }
+    .trayectoria div:nth-child(6) {
+      /*texto 3*/
+      width: 350px;
+      height: 300px;
+      font-size: 20px;
+      padding: 40px; }
+    .trayectoria div:nth-child(7) img {
+      /*img 3*/
+      width: 350px;
+      height: 300px; }
+    .trayectoria div:nth-child(8) {
+      /*texto 4*/
+      width: 350px;
+      height: 300px;
+      font-size: 20px;
+      padding: 40px; }
+    .trayectoria div:nth-child(9) img {
+      /*img 4*/
+      width: 320px;
+      height: 300px; }
+    .trayectoria div:nth-child(10) {
+      /*texto 5*/
+      width: 350px;
+      height: 320px;
+      font-size: 20px;
+      padding: 40px; }
+    .trayectoria div:nth-child(11) img {
+      /*img 5*/
+      width: 350px;
+      height: 320px; }
+    .trayectoria div:nth-child(12) {
+      /*texto 6*/
+      width: 350px;
+      height: 380px;
+      font-size: 20px;
+      padding: 20px; }
+    .trayectoria div:nth-child(13) img {
+      /*img 6*/
+      width: 350px;
+      height: 380px; }
+    .trayectoria div:nth-child(14) {
+      /*texto 7*/
+      width: 350px;
+      height: 280px;
+      font-size: 20px;
+      padding: 40px; }
+    .trayectoria div:nth-child(15) img {
+      /*img 7*/
+      width: 350px;
+      height: 280px; }
+  /*MAIN DE ARGENTINA*/
+  .argentina {
+    grid-template-rows: 60px repeat(3, 23.75rem);
+    gap: .625rem; }
+    .argentina h1 {
+      font-size: 24px; }
+    .argentina div:nth-child(2) {
+      /*parrafo 1*/
+      width: 370px;
+      height: 370px;
+      font-size: 18px;
+      padding: 30px;
+      font-weight: 500; }
+    .argentina div:nth-child(3) img {
+      /*imagen 1*/
+      width: 370px;
+      height: 370px; }
+    .argentina div:nth-child(4) {
+      /*parrafo 2*/
+      width: 370px;
+      height: 370px;
+      font-size: 18px;
+      padding: 30px;
+      font-weight: 500; }
+    .argentina div:nth-child(5) img {
+      /*imagen 2*/
+      width: 370px;
+      height: 370px; }
+    .argentina div:nth-child(6) {
+      /*parrafo 3*/
+      width: 370px;
+      height: 370px;
+      font-size: 18px;
+      padding: 30px;
+      font-weight: 500; }
+    .argentina div:nth-child(7) img {
+      /*imagen 3*/
+      width: 370px;
+      height: 370px; }
+  /*MAIN DE CONTACTO*/
+  .contacto h1 {
+    font-size: 30px; }
+  .contacto p {
+    font-size: 24px; }
+  .contacto label {
+    font-size: 20px; }
+  .contacto .form div:nth-child(2) input {
+    width: 300px;
+    height: 20px; }
+  .contacto .form div:nth-child(3) input {
+    width: 300px;
+    height: 20px; }
+  .contacto .form div:nth-child(4) input {
+    width: 300px;
+    height: 150px; }
+  .contacto .form div:nth-child(5) button {
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    color: black;
+    background-color: #b7c9f2;
+    border-radius: 20px;
+    border: 2px solid black; }
+    .contacto .form div:nth-child(5) button:active {
+      background-color: rgba(0, 0, 0, 0.521);
+      color: white; }
+  .contacto .form div {
+    padding: 10px; } }
+
+@media (min-width: 200px) and (max-width: 767px) {
+  /*----------header*/
+  header a {
+    font-size: 20px;
+    padding: 5px; }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    height: 40vh;
+    padding: 50px; }
+  header nav {
+    display: none;
+    position: absolute;
+    background-color: #b7c9f2;
+    height: 400px;
+    width: 100vw;
+    justify-content: center;
+    top: 60px;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10; }
+  .inputCheck {
+    display: none; }
+  .menu-label {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    top: 15px; }
+  .inputCheck:checked ~ nav {
+    display: flex; }
+  /*----------footer*/
+  footer {
+    height: 40px;
+    justify-content: center; }
+    footer ul {
+      display: none; }
+  footer a {
+    font-size: 20px;
+    left: 150px; }
+  /*main index*/
+  .mainIndex section div h1 {
+    font-size: 40px; }
+  .mainIndex section div h2 {
+    font-size: 30px; }
+  .container-fluid::after {
+    content: " ";
+    background-image: url(../assets/img_trayectoria/campeonspurs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10; }
+  /*main de biografia*/
+  .biografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    padding: 10px;
+    gap: 0rem; }
+    .biografia::after {
+      /*imagen de fondo*/
+      content: " ";
+      background-image: url(../assets/img_biografia/imagenbiografia.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-attachment: fixed;
+      opacity: .4;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1; }
+    .biografia h1 {
+      font-size: 20px; }
+      .biografia h1::after {
+        display: none; }
+      .biografia h1::before {
+        display: none; }
+    .biografia img {
+      display: none; }
+    .biografia div p {
+      justify-content: center;
+      align-content: center; }
+    .biografia p {
+      height: 100vh;
+      width: 100vw;
+      font-size: 16px;
+      padding: 20px; }
+  /*main de trayectoria*/
+  .trayectoria {
+    display: flex;
+    flex-direction: column;
+    padding: 5px; }
+    .trayectoria h1 {
+      font-size: 20px;
+      border: none;
+      text-align: center; }
+    .trayectoria div:nth-child(2) {
+      /*texto 1*/
+      width: 95vw;
+      height: 200px;
+      font-size: 18px;
+      padding: 30px;
+      border: none; }
+    .trayectoria div:nth-child(3) img {
+      /*img 1*/
+      width: 95vw;
+      height: 300px;
+      border: none; }
+    .trayectoria div:nth-child(4) {
+      /*texto 2*/
+      width: 95vw;
+      height: 220px;
+      font-size: 18px;
+      padding: 30px;
+      border: none; }
+    .trayectoria div:nth-child(5) img {
+      /*img 2*/
+      width: 95vw;
+      height: 300px;
+      border: none; }
+    .trayectoria div:nth-child(6) {
+      /*texto 3*/
+      width: 95vw;
+      height: 240px;
+      font-size: 18px;
+      padding: 30px;
+      border: none; }
+    .trayectoria div:nth-child(7) img {
+      /*img 3*/
+      width: 95vw;
+      height: 300px;
+      border: none; }
+    .trayectoria div:nth-child(8) {
+      /*texto 4*/
+      width: 95vw;
+      height: 240px;
+      font-size: 18px;
+      padding: 30px;
+      border: none; }
+    .trayectoria div:nth-child(9) img {
+      /*img 4*/
+      width: 95vw;
+      height: 300px;
+      border: none; }
+    .trayectoria div:nth-child(10) {
+      /*texto 5*/
+      width: 95vw;
+      height: 310px;
+      font-size: 18px;
+      padding: 30px;
+      border: none; }
+    .trayectoria div:nth-child(11) img {
+      /*img 5*/
+      width: 95vw;
+      height: 300px;
+      border: none; }
+    .trayectoria div:nth-child(12) {
+      /*texto 6*/
+      width: 95vw;
+      height: 400px;
+      font-size: 18px;
+      padding: 30px;
+      border: none; }
+    .trayectoria div:nth-child(13) img {
+      /*img 6*/
+      width: 95vw;
+      height: 400px;
+      border: none; }
+    .trayectoria div:nth-child(14) {
+      /*texto 7*/
+      width: 95vw;
+      height: 200px;
+      font-size: 18px;
+      padding: 30px;
+      border: none; }
+    .trayectoria div:nth-child(15) img {
+      /*img 7*/
+      width: 95vw;
+      height: 250px;
+      border: none; }
+  /*MAIN DE SELECCION ARGENTINA*/
+  .argentina {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    row-gap: .9375rem; }
+    .argentina h1 {
+      font-size: 22px;
+      border-radius: 20px;
+      text-align: center; }
+    .argentina div:nth-child(2) {
+      /*parrafo 1*/
+      width: 95vw;
+      font-size: 18px;
+      border-radius: 20px;
+      padding: 20px; }
+    .argentina div:nth-child(3) img {
+      /*imagen 1*/
+      width: 95vw;
+      height: 300px;
+      border-radius: 20px; }
+    .argentina div:nth-child(4) {
+      /*parrafo 2*/
+      width: 95vw;
+      font-size: 18px;
+      border-radius: 20px;
+      padding: 20px; }
+    .argentina div:nth-child(5) img {
+      /*imagen 2*/
+      width: 95vw;
+      height: 300px;
+      border-radius: 20px; }
+    .argentina div:nth-child(6) {
+      /*parrafo 3*/
+      width: 95vw;
+      font-size: 18px;
+      border-radius: 20px;
+      padding: 20px; }
+    .argentina div:nth-child(7) img {
+      /*imagen 3*/
+      width: 95vw;
+      height: 300px;
+      border-radius: 20px; }
+  /*MAIN CONTACTO*/
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 800px;
+    gap: .625rem; }
+    .contacto h1 {
+      font-size: 24px;
+      justify-self: center;
+      align-self: center; }
+    .contacto p {
+      font-size: 22px; }
+    .contacto label {
+      font-size: 18px; }
+    .contacto .form div:nth-child(2) input {
+      width: 80vw;
+      height: 30px; }
+    .contacto .form div:nth-child(3) input {
+      width: 80vw;
+      height: 30px; }
+    .contacto .form div:nth-child(4) input {
+      width: 80vw;
+      height: 190px; }
+  .form div:nth-child(5) button {
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    color: black;
+    background-color: #b7c9f2;
+    border-radius: 20px;
+    border: 2px solid black; }
+    .form div:nth-child(5) button:active {
+      background-color: rgba(0, 0, 0, 0.521);
+      color: white; } }
+
+/*llamado a los components*/
