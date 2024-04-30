@@ -1,0 +1,17 @@
+{
+  "name": "entrefinal-ginobili",
+  "version": "1.0.0",
+  "description": "En este sitio web, te vamos a estar contando brevemente la carrera deportiva de **Emanuel \"Manu\" Ginobili**.\r Te encontraras con 4 secciones, ademas de su pagina de Inicio.\r - En la seccion **Biografia** te encontraras con una imagen y un texto contando resumido su lugar de nacimiento, fecha, y sobre su familia.\r - En la seccion **Trayectoria** te contaremos sobre su carrera en los diferentes clubes.\r - En la seccion **Selección Argentina** te contamos sobre su paso por la seleccion y sus logros.\r - Te encontraras con la ultima seccion de **Contacto** donde podras dejar su opinion y criticas constructivas sobre el sitio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./sass/style.scss ./css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0"
+  }
+}
